@@ -405,7 +405,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 67
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -474,11 +474,16 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
+  
+  // Mosquito Magnum Hotend
+  #define DEFAULT_Kp 41.02
+  #define DEFAULT_Ki 6.75
+  #define DEFAULT_Kd 62.35
 
   // Ender 5 Stock Hotend
-  #define DEFAULT_Kp 23.95
-  #define DEFAULT_Ki 2.07
-  #define DEFAULT_Kd 69.40
+  //#define DEFAULT_Kp 23.95
+  //#define DEFAULT_Ki 2.07
+  //#define DEFAULT_Kd 69.40
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
